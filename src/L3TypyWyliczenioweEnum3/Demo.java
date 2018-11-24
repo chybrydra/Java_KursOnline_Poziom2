@@ -23,7 +23,9 @@ public class Demo {
 		System.out.println("Wywo³anie metody p2.compareTo(p1): " + p2.compareTo(p1));
 				
 		if (p1.compareTo(p3) == 0) {
-			System.out.println(p1 + " znajduje sie w takiej samej odleg³oœci od s³oñca, jak " + p2);
+			System.out.println(p1 + " znajduje sie w takiej samej odleg³oœci od s³oñca, jak " + p3);
+		} else {
+			System.out.println(p1 + "nie znajduje siê w takiej smaej odleg³oœci od s³oñca, jak " + p3);
 		}
 		
 		//metoda equals() 
