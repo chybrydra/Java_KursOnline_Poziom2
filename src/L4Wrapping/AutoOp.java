@@ -1,7 +1,11 @@
 package L4Wrapping;
 
+//korzystanie z typów prostych jest bardziej wydajne obliczeniowo, 
+//wiêc klas wrapper u¿ywamy dopiero w razie potrzebe
+
 //AUTOWRAPPING
 //w javie od wersji 5 zmienne s¹ opakowywane (wrapped) automatycznie i automatycznie "rozpakowywane"
+//tzn ¿e przed java 5 nie by³o autowrappingu
 //poni¿ej przyk³ady praktyczne
 
 public class AutoOp {
@@ -39,8 +43,30 @@ public class AutoOp {
 		x = (o1/(o2-1))*23;
 		System.out.println("(o1/(o2-1))*23 = " + x);
 		
+		
+		// czêœæ czwarta
+		System.out.println("\nCZÊŒÆ 4"); // wrapping dzia³a równie¿ przy instrukcjach steruj¹cych
+		System.out.println("Poni¿ej wykorzystanie instrukcji if:");
+		Boolean log2 = new Boolean(true);
+		if (log2) System.out.println("true!");
+		else System.out.println("false!");
+		o1 = 2;
+		System.out.println("Poni¿ej wykorzystanie switcha u¿ywaj¹c typu Integer jako parametru");
+		switch (o1) {
+			case 1: System.out.println("o1 = 1"); break;
+			case 2: System.out.println("o1 = 2"); break;
+			default: System.out.println("o1 inne ni¿ 1 i 2"); break;
+		}
+		
+		// czêœæ pi¹ta - inny przyk³ad
+		System.out.println("\nCZÊŒÆ 5");
+		Integer object = 9999;
+		int simple = object.byteValue();
+		System.out.println(simple); //byte uciê³o ¿eby dopasowaæ do swojego zakresu, b³¹d
+		System.out.println(object); //autowrapping sprawia ¿e wyeliminowany jest taki b³¹d
+		
 	}
-	
+		
 	static int sendInt(Integer value) {
 		return value;
 	}
