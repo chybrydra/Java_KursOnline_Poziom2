@@ -8,8 +8,11 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME) //strategia zachowania adnotacji
 public @interface Adnotacja {
-	String login();
-	String password();	
+	String login() default "rootUser";
+	String password() default "rootPassword"; 
+	//default "rootPassword" ustawia domyœln¹ wartoœæ adnotacji. 
+	//Bêdzie ona wykorzystana, je¿eli nie nadamy adnotacji ¿adnych wartoœci.
+	//default "rootUser" analogicznie - ustawia domyœln¹ wartoœæ adnotacji login()
 }
 
 /*
