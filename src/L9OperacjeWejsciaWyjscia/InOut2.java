@@ -19,6 +19,7 @@ public class InOut2 {
 		//nasz obiekt bêdzie korzysta³ z kana³u wyjœciowego obiektu System.out
 		//true - oznacza, ¿e java ma przesy³aæ dane po ka¿dym wywo³aniu metody println(), 
 		//dla wartoœci true bêdzie to wykonywane automatycznie
+		//jest to tylko jeden z kilku konstruktorów klasy PrintWriter
 
 		p.println("Hello Guys");
 		p.println(7);
