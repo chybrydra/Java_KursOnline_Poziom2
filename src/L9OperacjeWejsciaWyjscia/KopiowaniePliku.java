@@ -39,6 +39,8 @@ public class KopiowaniePliku {
 		
 		try {
 			while ((load = content.readLine()) != null) {
+				//w kursie kazali tutaj wpisaæ load, chocia¿ ja bym zrobi³ oddzieln¹ zmienn¹ na pobierane dane...
+				//w koñcu load mia³o przechowywaæ tylko nazwê kopiowanego pliku
 				out.writeBytes(load+"\n");				
 			}
 			out.close();
