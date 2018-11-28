@@ -1,0 +1,4 @@
+jeden
+dwa
+trzy
+cztery
