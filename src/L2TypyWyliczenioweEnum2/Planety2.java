@@ -11,8 +11,8 @@ public enum Planety2 {
 	
 	private double orbitalPeriod;
 	
-	Planety2(double op){
-		orbitalPeriod = op; //ka¿da sta³a bêdzie mia³a swoj¹ kopiê zmiennej orbitalPeriod
+	Planety2(double orbitalPeriod){
+		this.orbitalPeriod = orbitalPeriod; //ka¿da sta³a bêdzie mia³a swoj¹ kopiê zmiennej orbitalPeriod
 	}
 	
 	double getOrbPeriod() {
